@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Crimson+Pro&family=Crimson+Text&family=DM+Sans:opsz@9..40&family=EB+Garamond:wght@400;500&family=Libre+Baskerville:wght@700&family=Lily+Script+One&family=Lusitana&family=Oleo+Script+Swash+Caps&family=Patua+One&family=Rakkas&family=Varela+Round&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    height:100vh;
+    width: 100vw;
+    font-size: 1rem;
+    background-color:dimgrey;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family:'Crimson Pro',serif;
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+.temperature-converter{
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px 45px;
+    min-width: 320px;
+    width: 45%;
+    height: auto;
+    box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);
+}
+
+.title {
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  label {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  input,
+  select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+    
+  }
+  input:focus {
+    border: 1px solid #2134fe;
+  }
+
+  .degree-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+
+  
+  option {
+    background-color: #f9d222;
+    color: #000000;
+  }
+
+  #convert-btn {
+    background: linear-gradient(to bottom, #3633f3, #120fb9);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+    
+  }
+  #convert-btn:hover {
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+  }
+
+  .fa {
+    margin-left: -12px;
+    margin-right: 8px;
+  }
+  
+  .loading {
+    display: none;
+  }
+
+  .result {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .result-heading{
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .celsius-value {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+    
+  }
+
+
